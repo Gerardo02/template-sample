@@ -1,0 +1,73 @@
+/* .main-layout {
+  border-radius: 8px;
+  height: 5000px;
+  overflow: hidden;
+}
+
+.collapse-button {
+  width: 100%;
+  border-radius: 8px 0 0 0;
+}
+
+.sider-layout {
+  background-color: white;
+  overflow-y: auto;
+  overflow-x: hidden;
+} */
+
+
+/* App.css */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.main-layout {
+  height: 100vh; /* Make the layout full screen */
+  display: flex;
+}
+
+.child-layout {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.sider-layout {
+  overflow-y: auto; /* Allow vertical scrolling */
+  overflow-x: hidden;
+}
+
+.collapse-button {
+  width: 100%;
+  height: 50px;
+  border-radius: 8px 0 0 0;
+}
+
+/* Ensure content fills the remaining space */
+.child-layout .ant-layout-content {
+  flex: 1;
+  padding: 16px;
+}
+
+.header-layout {
+  text-align: center;
+  color: #fff;
+  height: 50px;
+  padding-inline: 48px;
+  line-height: 45px;
+  background-color: #333154;
+  font-size: 20px;
+
+}
+
+.footer-layout {
+  color: #fff;
+  background-color: #d1d1d1;
+  padding: 15px 0 15px 0;
+}
+
+.content-layout {
+  overflow-x: auto;
+}
