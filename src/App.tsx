@@ -19,10 +19,6 @@ const { Header, Footer, Sider, Content } = Layout;
 
 type MenuItem = Required<MenuProps>['items'][number];
 
-const layoutStyle2: React.CSSProperties = {
-  overflow: 'auto',
-};
-
 const items: MenuItem[] = [
   {
     label: 'Navigation One',
@@ -117,7 +113,7 @@ function App() {
             items={items}
           />
         </Sider>
-        <Layout className="child-layout" style={layoutStyle2}>
+        <Layout className="child-layout">
           <Header className="header-layout" >Header</Header>
           <Content className="content-layout">
             lorem*50
